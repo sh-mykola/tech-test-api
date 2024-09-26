@@ -3,7 +3,7 @@ from typing import Annotated
 from fastapi import APIRouter, Body, Depends, Path
 from pydantic import UUID4
 
-from app import setup_logger
+from app.logger import setup_logger
 from app.breweries.schemas import BreweryCreateRequest
 from app.dependencies import get_brewery_repository
 from app.models import Brewery
